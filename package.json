@@ -2,7 +2,7 @@
   "name": "bypass",
   "version": "1.0.0",
   "description": "App to bypass blocked websites",
-  "main": "main.sh",
+  "main": "index.js",
   "scripts": {
     "start": "electron . --no-sandbox"
   },
