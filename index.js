@@ -4,7 +4,7 @@ function createWindow () {
     const win = new BrowserWindow({
         width: 800,
         height: 600,
-        fullscreen: true
+        center: true
     });
     win.loadURL("https://google.com");
 };
