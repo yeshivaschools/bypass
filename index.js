@@ -4,8 +4,13 @@ function createWindow () {
     const win = new BrowserWindow({
         width: 800,
         height: 600,
-        center: true
+        center: true,
+        enableLargerThanScreen: false,
+        darkTheme: true,
+        minimizable: false,
+        maximizable: true
     });
+
     win.loadURL("https://google.com");
 };
 
