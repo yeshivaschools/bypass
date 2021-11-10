@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "aroary",
-  "license": "Unlicence",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^11.2.1"
   }
