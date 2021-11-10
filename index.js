@@ -1,7 +1,11 @@
 const { app, BrowserWindow } = require('electron');
 
 function createWindow () {
-    const win = new BrowserWindow({ width: 800, height: 600 });
+    const win = new BrowserWindow({
+        width: 800,
+        height: 600,
+        fullscreen: true
+    });
     win.loadURL("https://google.com");
 };
 
