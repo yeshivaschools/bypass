@@ -1,2 +1,1 @@
-npm i
-npm start
+chromium-browser --no-sandbox
