@@ -1,1 +1,1 @@
-chromium-browser --no-sandbox
+chromium-browser --no-sandbox --disable-logging --incognito
