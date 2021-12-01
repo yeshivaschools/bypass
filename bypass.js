@@ -5,6 +5,6 @@ const licence = `This is free and unencumbered software released into the public
 \nFor more information, please refer to <https://unlicense.org>`
 
 window.onload = () => {
-    alert("Bypass your school internet restrictions with this remote server.\n\taroary#0500\t(discord)\n\taroary.exe\t(instagram)\n\taroary\t(github)");
-    alert("This can be potentially insecure, it is not recommended to enter personal or private information into a website here.\nIf you need to log into any sort of account it is recommended to use 2fa\n" + licence);
+    alert("Bypass school internet restrinctions by opening a website in a remote server. Press the creen button to start your settion, navigate between the four windows to change your browser or to view logs or output. Audio is supported, to use audio press the icon on the bottom left of the output window (this may slow down your settion).")
+    alert("This can be potentially insecure, it is not recommended to enter personal or private information into a website here.\nIf you need to log into any sort of account it is recommended to use 2fa and the chrome browser\n\n" + licence);
 };
