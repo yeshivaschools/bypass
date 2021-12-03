@@ -16,12 +16,13 @@ const data = {
         "Press the green play button on the bottom right to start your settion, navigate between the four windows to change your browser or to view logs or output.",
         "Audio is supported, to use audio press the icon on the bottom left of the output window (this may slow down your settion).",
         "To change the browser, go to the code window (files icon on the bottom). Then open the <code>main.sh</code> file if it is not already open. (the file selctor icon is on the top right of the files window.) Then follow steps show.",
-        ""
     ],
     other: [
         'The servers running your browser is run by <a href="https://replit.com" target="_blank" rel="noopener noreferrer">Replit</a>.',
         "Firefox is set as the defualt browser because chrome has more filters and can sometimes fail to show you what you want to see."
-    ]
+    ],
+    firefox: "firefox -browser -foreground -private",
+    chrome: "chromium-browser --no-sandbox --disable-logging --incognito --start-maximized --start-in-incognito"
 };
 
 document.getElementById("ok").addEventListener("click", () => {
@@ -31,8 +32,9 @@ document.getElementById("ok").addEventListener("click", () => {
 });
 
 document.getElementById("info").addEventListener("click", () => {
+    const bash = `<p>Firefox: <code style="-webkit-user-select: all; -moz-user-select: all; -ms-user-select: all; user-select: all;">${data.firefox}</code><br>Chrome: <code style="-webkit-user-select: all; -moz-user-select: all; -ms-user-select: all; user-select: all;">${data.chrome}</code></p><h3>Licence</h3><p>`
     const garbage = '<hr><h4>Complaints</h4><form action=""><textarea style="resize: none; width: 100%;" required placeholder="Your complaint here 🤦‍♂️"></textarea><br><button type="reset">Clear</button></form>';
-    info('Information', `<h3>Warning</h3><p>${data.warning}</p><h3>Help</h3><ul><li>${data.help.join`</li><li>`}</li></ul><h3>Other</h3><ul><li>${data.other.join`</li><li>`}</li></ul><h3>Licence</h3><p><code>${data.licence}</code></p>${garbage}`);
+    info('Information', `<h3>Warning</h3><p>${data.warning}</p><h3>Help</h3><ul><li>${data.help.join`</li><li>`}</li></ul><h3>Other</h3><ul><li>${data.other.join`</li><li>`}</li></ul>${bash}<code>${data.licence}</code></p>${garbage}`);
 });
 
 function info(title, body) {
