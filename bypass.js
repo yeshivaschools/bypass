@@ -31,7 +31,7 @@ document.getElementById("ok").addEventListener("click", () => {
 });
 
 document.getElementById("info").addEventListener("click", () => {
-    const garbage = '<hr><h4>Complaints</h4><form action=""><textarea required placeholder="Your complaint here 🤦‍♂️"></textarea><br><button type="reset">Send</button><button type="reset">Clear</button></form><h6>Your complaint will be profetionally ignored</h6>';
+    const garbage = '<hr><h4>Complaints</h4><form action=""><textarea required placeholder="Your complaint here 🤦‍♂️"></textarea><br><button type="reset">Clear</button></form>';
     info('Information', `<h3>Warning</h3><p>${data.warning}</p><h3>Help</h3><ul><li>${data.help.join`</li><li>`}</li></ul><h3>Other</h3><ul><li>${data.other.join`</li><li>`}</li></ul><h3>Licence</h3><p><code>${data.licence}</code></p>${garbage}`);
 });
 
