@@ -10,10 +10,10 @@ const data = {
     For more information, please refer to <a href="https://unlicense.org" target="_blank" rel="noopener noreferrer">https://unlicense.org</a>`,
     warning: `These servers can be potentially insecure (privacy is in no way gauranteed), it is not recommended to enter personal or private information into a website in a browser on a server within this page. <br>
     <br>
-    If you need to log into any sort of account it is recommended to use 2fa (two factor authentication) and the chrome browser in incognito mode`,
+    If you need to log into any sort of account it is recommended to use 2fa (two factor authentication) and the chrome browser in incognito mode.`,
     help: [
         "Bypass school internet restrinctions by opening a website in a remote server.",
-        "Press the green play button on the bottom right to start your settion, navigate between the four windows to change your browser or to view logs or output.",
+        "Press the green play button on the bottom right to start your session, navigate between the four windows to change your browser or to view logs or output.",
         "Audio is supported, to use audio press the icon on the bottom left of the output window (this may slow down your settion).",
         "To change the browser, go to the code window (files icon on the bottom). Then open the <code>main.sh</code> file if it is not already open. (the file selctor icon is on the top right of the files window.) Then follow steps show.",
     ],
