@@ -15,7 +15,7 @@ const data = {
         "Bypass school internet restrinctions by opening a website in a remote server.",
         "Press the green play button on the bottom right to start your session, navigate between the four windows to change your browser or to view logs or output.",
         "Audio is supported, to use audio press the icon on the bottom left of the output window (this may slow down your settion).",
-        "To change the browser, go to the code window (files icon on the bottom). Then open the <code>main.sh</code> file if it is not already open. (the file selctor icon is on the top right of the files window.) Then follow steps show.",
+        "To change the browser, go to the code window (files icon on the bottom). Then open the <code>main.sh</code> file if it is not already open. (the file selctor icon is on the top right of the files window.) Then follow steps shown.",
     ],
     other: [
         'The servers running your browser is run by <a href="https://replit.com" target="_blank" rel="noopener noreferrer">Replit</a>.',
