@@ -1,3 +1,7 @@
+:root {
+    --theme:#57ABFF;
+}
+
 body { background-color: black; }
 
 iframe {
@@ -9,9 +13,9 @@ iframe {
 }
 
 #information {
-    background-color: white;
+    background-color: lightcyan;
     color: black;
-    font-family:'Cascadia code', Arial, Helvetica, sans-serif;
+    font-family: /*'Cascadia code',*/ Arial, Helvetica, sans-serif;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -19,10 +23,11 @@ iframe {
     height: 70%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
+    display: none;
 }
 
 #information #title {
-    background-color: cyan;
+    background-color: var(--theme);
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -32,8 +37,8 @@ iframe {
 
 #information #body {
     background-color: transparent;
-    border-top: 1px solid cyan;
-    border-bottom: 1px solid cyan;
+    border-top: 1px solid var(--theme);
+    border-bottom: 1px solid var(--theme);
     padding: 10px;
     position: fixed;
     top: 100px;
@@ -51,7 +56,7 @@ iframe {
 
 #information #ok {
     color: black;
-    background-color: cyan;
+    background-color: var(--theme);
     border: 1px solid black;
     border-radius: 4px;
     position: fixed;
@@ -61,15 +66,15 @@ iframe {
 }
 
 #information #ok:hover {
-    color: cyan;
+    color: var(--theme);
     background-color: transparent;
-    border: 1px solid cyan;
+    border: 1px solid var(--theme);
 }
 
 #info {
-    color: cyan;
+    color: var(--theme);
     background-color: transparent;
-    border: 1px solid cyan;
+    border: 1px solid var(--theme);
     border-radius: 4px;
     position: fixed;
     bottom: 25px;
@@ -78,6 +83,32 @@ iframe {
 
 #info:hover {
     color: black;
-    background-color: cyan;
+    background-color: var(--theme);
     border: 1px solid black;
 }
+
+.info {
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.indexItem:hover {
+    padding: 4px;
+    background-color: var(--theme);
+    border-radius: 4px;
+    width: fit-content;
+}
+
+#trash {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 200px;
+    resize: vertical;
+}
+
+/* #source #body code {
+    user-select: all;
+    -ms-user-select: all;
+    -moz-user-select: all;
+    -webkit-user-select: all;
+} */
