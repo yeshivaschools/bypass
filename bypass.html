@@ -57,9 +57,9 @@
                 <ul>
                     <li class="indexItem" onclick="show(get('intro'))">Intro</li>
                     <li class="indexItem" onclick="show(get('help'))">Help</li>
-                    <li class="indexItem" onclick="show(get('settings'))">Settings</li>
                     <li class="indexItem" onclick="show(get('feedback'))">Feedback</li>
                     <li class="indexItem" onclick="show(get('licence'))">License</li>
+                    <li class="indexItem" onclick="show(get('privacy'))">Privacy</li>
                     <li class="indexItem" onclick="show(get('source'))">Source</li>
                 </ul>
             </div>
@@ -87,12 +87,18 @@
         <template id="help">
             <h1 id="title">Help</h1>
             <div id="body">
+                <h3>General</h3>
                 <ul>
                     <li>Bypass school internet restrinctions by opening a website in a remote server.</li>
                     <li>Press the green play button on the bottom right to start your session, navigate between the four windows to change your browser or to view logs or output.</li>
                     <li>Audio is supported, to use audio press the icon on the bottom left of the output window (this may slow down your settion).</li>
                     <li>To change the browser, go to the code window (files icon on the bottom). Then open the <code>main.sh</code> file if it is not already open. (the file selctor icon is on the top right of the files window.) Then follow steps shown in the file.</li>
                 </ul>
+                <h3>AW, Snap! <code>SIGTRAP</code></h3>
+                <p>
+                    This is caused by the browser not being able to find the correct executable for the browser you are trying to use.<br>
+                    If you are encountering this error, you may need to change the browser.
+                </p>
                 <br>
                 <button type="button" class="info" onclick="show(get('infoData'))">info ℹ️</button>
             </div>
@@ -121,12 +127,18 @@
                 <button type="button" class="info" onclick="show(get('infoData'))">info ℹ️</button>
             </div>
         </template>
-        <template id="settings">
-            <h1 id="title">Settings</h1>
+        <template id="privacy">
+            <h1 id="title">Privacy</h1>
             <div id="body">
-                Nothing to set here yet.
-                <br>
-                <button type="button" class="info" onclick="show(get('infoData'))">info ℹ️</button>
+                <p>
+                    <code>
+                        Any information entered anywhere on this page is not gauranteed to be secure, and is not gauranteed to be private.<br>
+                        <br>
+                        Enter information at your own risk, we will not be held liable for any damage caused by your information.<br>
+                        <br>
+                    </code>
+                    If you for any reason want to enter personal information we recommend using the chrome browser in incognito mode.
+                </p>
             </div>
         </template>
         <!-- Information templates -->
