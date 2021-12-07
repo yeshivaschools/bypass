@@ -23,7 +23,7 @@
                 <p>
                     Welcome to the official school bypass system. <br>
                     <br>
-                    If you need help or you dont understand something there is a very helpful info button <span onclick="show(document.getElementById('infoData'))">ℹ️</span> on the bottom left, feal free to check it out. <br>
+                    If you need help or you dont understand something there is a very helpful info button <span onclick="show(get('infoData'))">ℹ️</span> on the bottom left, feal free to check it out. <br>
                     <br>
                     If you by any chance want to contribute to this program, or if you just want to report a problem you can visit the source code <a href="http://github.com/yeshivaschools/bypass" target="_blank" rel="noopener noreferrer">here</a>. <br>
                 </p>
@@ -55,12 +55,12 @@
                 </p>
                 <h3>Index</h3>
                 <ul>
-                    <li class="indexItem" onclick="show(document.getElementById('intro'))">Intro</li>
-                    <li class="indexItem" onclick="show(document.getElementById('help'))">Help</li>
-                    <li class="indexItem" onclick="show(document.getElementById('settings'))">Settings</li>
-                    <li class="indexItem" onclick="show(document.getElementById('feedback'))">Feedback</li>
-                    <li class="indexItem" onclick="show(document.getElementById('licence'))">License</li>
-                    <li class="indexItem" onclick="show(document.getElementById('source'))">Source</li>
+                    <li class="indexItem" onclick="show(get('intro'))">Intro</li>
+                    <li class="indexItem" onclick="show(get('help'))">Help</li>
+                    <li class="indexItem" onclick="show(get('settings'))">Settings</li>
+                    <li class="indexItem" onclick="show(get('feedback'))">Feedback</li>
+                    <li class="indexItem" onclick="show(get('licence'))">License</li>
+                    <li class="indexItem" onclick="show(get('source'))">Source</li>
                 </ul>
             </div>
         </template>
@@ -81,7 +81,7 @@
                     </code>
                 </p>
                 <br>
-                <button type="button" class="info" onclick="show(document.getElementById('infoData'))">info ℹ️</button>
+                <button type="button" class="info" onclick="show(get('infoData'))">info ℹ️</button>
             </div>
         </template>
         <template id="help">
@@ -94,7 +94,7 @@
                     <li>To change the browser, go to the code window (files icon on the bottom). Then open the <code>main.sh</code> file if it is not already open. (the file selctor icon is on the top right of the files window.) Then follow steps shown in the file.</li>
                 </ul>
                 <br>
-                <button type="button" class="info" onclick="show(document.getElementById('infoData'))">info ℹ️</button>
+                <button type="button" class="info" onclick="show(get('infoData'))">info ℹ️</button>
             </div>
         </template>
         <template id="source">
@@ -105,7 +105,7 @@
                     <li><strong>chrome:</strong> <code>chromium-browser --no-sandbox --disable-logging --incognito --start-maximized --start-in-incognito</code></li>
                 </ul>
                 <br>
-                <button type="button" class="info" onclick="show(document.getElementById('infoData'))">info ℹ️</button>
+                <button type="button" class="info" onclick="show(get('infoData'))">info ℹ️</button>
             </div>
         </template>
         <template id="feedback">
@@ -118,7 +118,7 @@
                     <button type="submit" disabled>Submit</button>
                 </form>
                 <br>
-                <button type="button" class="info" onclick="show(document.getElementById('infoData'))">info ℹ️</button>
+                <button type="button" class="info" onclick="show(get('infoData'))">info ℹ️</button>
             </div>
         </template>
         <template id="settings">
@@ -126,8 +126,9 @@
             <div id="body">
                 Nothing to set here yet.
                 <br>
-                <button type="button" class="info" onclick="show(document.getElementById('infoData'))">info ℹ️</button>
+                <button type="button" class="info" onclick="show(get('infoData'))">info ℹ️</button>
             </div>
         </template>
+        <!-- Information templates -->
     </body>
 </html>

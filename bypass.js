@@ -1,9 +1,19 @@
-const information = document.getElementById("information");
-const data = document.getElementById("data");
+const information = get("information");
+const data = get("data");
 
-window.addEventListener("load", () => show(document.getElementById("intro")));
-document.getElementById("ok").addEventListener("click", () => information.style.display = "none");
-document.getElementById("info").addEventListener("click", () => show(document.getElementById("infoData")));
+window.addEventListener("load", () => show(get("intro")));
+
+get("ok").addEventListener("click", () => information.style.display = "none");
+get("info").addEventListener("click", () => show(get("infoData")));
+
+/**
+ * @description get an element by id
+ * @param {string} id 
+ * @returns {Element} the element with the given id
+ */
+function get(id) {
+    return document.getElementById(id);
+};
 
 /**
  * @description Show premade content in the information window
@@ -14,11 +24,5 @@ function show(template) {
     information.style.display = "block";
 };
 
-// {
-//     other: [
-//         'The servers running your browser is run by <a href="https://replit.com" target="_blank" rel="noopener noreferrer">Replit</a>.',
-//         "Firefox is set as the defualt browser because chrome has more filters and can sometimes fail to show you what you want to see."
-//     ],
-//     firefox: "firefox -browser -foreground -private",
-//     chrome: "chromium-browser --no-sandbox --disable-logging --incognito --start-maximized --start-in-incognito"
-// };
+// 'The servers running your browser is run by <a href="https://replit.com" target="_blank" rel="noopener noreferrer">Replit</a>.',
+// "Firefox is set as the defualt browser because chrome has more filters and can sometimes fail to show you what you want to see."
