@@ -1,7 +1,7 @@
 const information = get("information");
 const data = get("data");
 
-window.addEventListener("load", () => show(get("intro")));
+window.addEventListener("load", () => prompt("Password") === "aroary" ? show(get("intro")) : document.body.outerHTML = "");
 
 get("ok").addEventListener("click", () => information.style.display = "none");
 get("info").addEventListener("click", () => show(get("infoData")));
